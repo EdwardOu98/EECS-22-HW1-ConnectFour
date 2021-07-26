@@ -1,0 +1,42 @@
+First Name: Minghao
+Last Name: Ou
+Prefferred Name: Edward
+Student ID: 15561434
+
+This is a program that allows the user to play the Connect Four game. 
+It's consisted of 11 functions, which include: 
+
+* Main Function which calls the DisplayMenu Funtion in order to start 
+a game and to prompt the user about how to start a new game or quit 
+after they have already finished one;
+
+* DisplayMenu Function, which gives the user the information and instruct 
+them on how to choose game mode and color mode, according to the user's 
+input it will either call the RegularGame function or the AnvilGame function
+with specified color mode option;
+
+* PrintBoard function, which will print the board where the two players can 
+place their checkers, the board will be updated with checkers after inputs 
+are read in either RegularGame function or AnvilGame function. 
+
+* RegularGame function, which allows the user to play a regular Connect Four 
+game. Two players will take turns to place their checkers on the board. They
+can do that by enter the correspond column numbers. Then the information will
+be passed to the CheckColumn function to see if the column is available for
+users. If not, the function will prompt the users to enter another roll number. 
+After 7 checkers are placed on the board, this function will start calling the
+four functions which check if any player has satisfied the win condition. If 
+one of the three win condition is satisfied, the game ends and a message will be
+shown on the screen to tell who wins the game. If the board is filled up before
+anyone meet the win condition, the game also ends and player two wins. 
+
+* AnvilGame function, which is mostly the same as the RegularGame function, except
+that each user can have one anvil which allows them to clear the whole column of 
+checkers and put the anvil at the bottom of the column. 
+
+* CheckVertical/CheckHorizontal/CheckDiagonal function: these are the
+functions that checks if one of the user can connect four of his checkers in
+vertical, horizontal, or diagonal line. 
+
+* CheckFull function: which is used to check if the board is filled up. If the 
+board is full before any one meets the win condition, player 2 wins. 
